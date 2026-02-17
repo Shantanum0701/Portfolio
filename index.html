@@ -1,234 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="shortcut icon" href="images/name.png" type="image/x-icon">
+    <meta name="description" content="Portfolio of Shantanu Marik, a Full Stack Developer based in Bhubaneswar.">
+    <title>Shantanu Marik | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/662b1f385a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div id="header">
-        <div class ="container">
+
+    <header>
+        <div class="container">
             <nav>
-                
-                <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <div class="logo">Shantanu Marik</div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#experience">Work Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="https://drive.google.com/uc?export=download&id=11OKSsOpRLkXIEeHU5iLC7ZIVb6f_Z8oW"
+                        target="_blank" rel="noopener noreferrer">Resume</a>
+                </div>
             </nav>
-            <div class="header-text">
-                <p>Full Stack Developer</p>
-                <h1>Hi,I'm <span>Shantanu</span><br>Marik, a Pre-final <br>undergraduate</h1>
-
-            </div>
         </div>
-    </div>
-    <div>
-        <!--------------about-------------->
-        <div id="about">
+    </header>
+
+    <main>
+        <section id="hero">
             <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/q1.jpg">
+                <div class="hero-content fade-in">
+                    <h1 class="hero-headline">I build software by focusing on <span class="accent-text">clarity,
+                            structure, and correctness.</span></h1>
+                    <p>Using HTML, CSS, JavaScript, and React to solve real problems with clean logic and maintainable
+                        code.</p>
+
+                    <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="https://drive.google.com/uc?export=download&id=11OKSsOpRLkXIEeHU5iLC7ZIVb6f_Z8oW"
+                            target="_blank" rel="noopener noreferrer" class="btn">Download Resume</a>
                     </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>As a dedicated full stack web developer, I have successfully executed a variety of projects that demonstrate my proficiency in this domain. I am currently a pre-final year student at KIIT University in Bhubaneswar, maintaining a CGPA of 7.95. My academic background includes comprehensive coursework in Computer Networks, Data Structures and Algorithms, Database Management Systems, Operating Systems, and Computer Organization. 
 
-                            In addition to my technical skills, I am passionate about sports, enjoying activities such as cricket, badminton, and table tennis. I am enthusiastic about leveraging my skills and knowledge to contribute to dynamic organizations and am keen to explore new professional opportunities.</p>
-
-                       <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                       </div>
-                       <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                           
-                            <li><span>Web Development</span><br>Web App development</li>
-                            <li><span>DSA</span><br>Solving different algorithms</li>
-                            <li><span>CN</span><br>Hands on experience in Computer Networks</li>
-                        </ul>
-                       </div>
-                       <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span></span><br></li>
-                            <li><span></span><br></li>
-                            <li><span></span><br></li>
-                        </ul>
-                       </div>
-                       <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>KIIT University</span><br>Pre-Final undergraduate in CSE</li>
-                            <li><span>Lucknow Public School</span><br>Senior Secondary</li>
-                            <li><span>St. Mary's Convent Inter College</span><br>Highschool</li>
-                        </ul>
-                       </div>
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/shantanu-marik-67124a265/" target="_blank">LinkedIn</a>
+                        <a href="mailto:marikshantanu@gmail.com">Email</a>
+                        <a href="https://github.com/Shantanum0701" target="_blank">GitHub</a>
+                        <!-- Add GitHub link if available, assuming yes since folder is named github -->
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-------services--->
-    <div id="services">
-        <div class="container">
-           <h1 class="sub-title">My Services</h1>
-           <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Development</h2>
-                <p>Offering custom web development services to create responsive, user-friendly websites tailored to your business needs.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2></h2>
-                <p></p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2></h2>
-                <p></p>
-                <a href="#">Learn more</a>
-            </div>
-           </div>
-        </div>
-    </div>
-
-    <!-----portfolio---->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/e1.png" >
-                    <div class="layer">
-                        <h3>E-Commerce Website</h3>
-                        <p>Developed a full-stack eCommerce website with features for product browsing, secure checkout, and user account management.</p>
-                        <a href="#"><i class="fa-solid  fa-arrow-up-right-from-square"></i></a>
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="fade-in">About Me</h2>
+                <div class="about-grid fade-in">
+                    <div>
+                        <p>I’m a developer with a strong foundation in web fundamentals, focused on building clean,
+                            reliable, and maintainable software. I work primarily with HTML, CSS, JavaScript, and React,
+                            and I approach problems by breaking them into clear components and implementing predictable,
+                            well-structured solutions.</p>
+                        <p>I continuously strengthen my skills through data structures, problem solving, and real
+                            projects that reflect real-world usage.</p>
                     </div>
-                </div>
-                    <div class="work">
-                        <img src="images/qr.jpg" >
-                        <div class="layer">
-                            <h3>QR code generator</h3>
-                            <p>Created a web application for generating customizable QR codes, allowing users to easily encode and download information.</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <div>
+                        <h3>Core Technologies</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">HTML5 & CSS3</span>
+                            <span class="skill-tag">JavaScript (ES6+)</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">Data Structures</span>
                         </div>
                     </div>
-                        <div class="work">
-                            <img src="images/work-3.png" >
-                            <div class="layer">
-                                <h3>Online Shopping App</h3>
-                                <p>The app connects you to the talented people of the world.Download it from play store.</p>
-                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section-padding">
+            <div class="container">
+                <h2 class="fade-in">Work Experience</h2>
+                <div class="project-list">
+                    <article class="project-item fade-in">
+                        <div class="project-meta">
+                            2024 / Internship
+                        </div>
+                        <div class="project-details">
+                            <h3>Frontend Developer Intern<br><span
+                                    style="font-size: 1rem; color: var(--accent-color);">GAIL (India) Limited</span>
+                            </h3>
+                            <p>Worked as a Frontend Developer Intern on the Anushravan Portal, a web-based system used
+                                for gate pass management. I was responsible for building and maintaining the frontend
+                                using React, HTML, CSS, JavaScript, and Bootstrap. My work included developing digital
+                                gate pass request forms, CISF verification dashboards, document upload and download
+                                features, and real-time tracking views.</p>
+                            <p>I focused on creating a responsive, role-based, and user-friendly interface, and
+                                collaborated with backend developers to integrate frontend components with REST APIs.
+                                This experience gave me hands-on exposure to enterprise-level frontend development,
+                                component-based design, debugging, and working within a team environment.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Bootstrap</span>
+                                <span>REST APIs</span>
+                                <span>Team Collaboration</span>
                             </div>
                         </div>
+                    </article>
+                </div>
             </div>
-            <a href="#" class="btn">See more</a>
-        </div>
-    </div>
-    <!------contact-->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class=""sub-title>Contact Me</h1>
-                    <p> <i class="fa-regular fa-paper-plane"></i>contact marikshantanu@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>8528916411</p>
-                    <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/shantanu-marik-67124a265/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </section>
+
+        <section id="projects" class="section-padding">
+            <div class="container">
+                <h2 class="fade-in">Projects</h2>
+                <div class="project-list">
+
+                    <!-- Project 1 -->
+                    <article class="project-item fade-in">
+                        <div class="project-meta">
+                            2025 / Warehouse Management
+                        </div>
+                        <div class="project-details">
+                            <h3>Warehouse Management Web Application</h3>
+                            <p>A full-stack web application built to manage warehouse inventory and basic operational
+                                workflows. I designed and implemented REST APIs using Node.js and Express for handling
+                                inventory data, and used MongoDB for storing and updating product and stock information.
+                                On the frontend, I built a React-based interface to display inventory, handle user
+                                actions, and keep the UI in sync with backend data. The application focuses on clean
+                                data flow between the client and server, clear separation of concerns, and predictable
+                                behavior for common warehouse operations such as adding, updating, and tracking items.
+                            </p>
+                            <p><strong>Key takeaway:</strong> Learned how backend data modeling directly affects
+                                frontend complexity and how well-designed APIs simplify state management on the client.
+                            </p>
+                            <div class="project-tech">
+                                <span>MongoDB</span>
+                                <span>Express</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <br>
+                            <a href="#" class="btn">View Source</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-item fade-in">
+                        <div class="project-meta">
+                            2024 / Web Portal Application
+                        </div>
+                        <div class="project-details">
+                            <h3>Web Portal Application</h3>
+                            <p>A web portal for managing and displaying application data. I worked on building the
+                                frontend interface, connecting it to backend APIs, and handling user interactions using
+                                React and JavaScript.</p>
+                            <p><strong>Key takeaway:</strong> Strengthened my understanding of integrating frontend and
+                                backend systems.</p>
+                            <div class="project-tech">
+                                <span>MongoDB</span>
+                                <span>Express</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <br>
+                            <a href="#" class="btn">View Source</a>
+                        </div>
+                    </article>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2 class="fade-in">Get In Touch</h2>
+                <div class="contact-grid fade-in">
+                    <div class="contact-text">
+                        <p>I am actively looking for new opportunities as a Full Stack Developer. Whether you have a
+                            question, a project idea, or just want to say hi, my inbox is open.</p>
+                        <br>
+                        <a href="https://drive.google.com/uc?export=download&id=11OKSsOpRLkXIEeHU5iLC7ZIVb6f_Z8oW"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary">Download Resume</a>
                     </div>
-                    <a href="images/resume.pdf"download class="btn btn2">Download CV</a>
+                    <div class="contact-links">
+                        <a href="mailto:marikshantanu@gmail.com" class="link-item">marikshantanu@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/shantanu-marik-67124a265/" target="_blank"
+                            class="link-item">LinkedIn</a>
+                        <a href="https://github.com/Shantanum0701" target="_blank" class="link-item">GitHub</a>
+                        <a href="tel:+918528916411" class="link-item">+91 8528916411</a>
+                    </div>
                 </div>
-                <div class="contact-right">
-                    <form  name="submit-to-google-sheet" >
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="Email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    
-                        
-                        
-                    </form>
-  
-                    
-                    
-                    <span id="msg"></span>
-                </div>
-                
-                
             </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright @ Shantanu</p>
-        </div>
-    </div>
-    
-    <script>
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-
-        }
+        </section>
+    </main>
 
 
-    </script>
-    
-    <script>
 
-        var sidemeu = document.getElementById("sidemenu");
+    <script src="script.js"></script>
+</body>
 
-        function openmenu(){
-            sidemeu.style.right="0";
-
-        }
-
-        function closemenu(){
-            sidemeu.style.right="-200px";
-        }
-
-    </script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyfMHMbgXT-esfrSZ2PznFnO32StxHf-FzbxGv2bSgGkqoOMH0H7VOK5H3584plNCQC/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg=document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML="Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML
-
-            },5000)
-            form.reset
-        })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-</body>     
 </html>
